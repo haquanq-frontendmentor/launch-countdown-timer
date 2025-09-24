@@ -60,19 +60,19 @@ export const Flipper = (props: FLipperProps) => {
 
   return (
     <div class="flipper relative" role="timer">
-      <span class="absolute block left-0 right-0 top-0 h-[calc(var(--flipper-height)_+_var(--flipper-shadow-offset-y))] bg-blue-900 rounded-inherit"></span>
+      <span class="absolute block left-0 right-0 top-0 h-[calc(var(--flipper-height)+var(--flipper-shadow-offset-y))] bg-blue-900 rounded-inherit"></span>
       <div
-        class="z-[100] relative w-[var(--flipper-width)] h-[var(--flipper-height)] rounded-inherit"
+        class="z-100 relative w-(--flipper-width) h-(--flipper-height) rounded-inherit"
         ref={flipperRef}
         aria-hidden="true"
       >
         <FlipperTop
-          class="absolute z-[999] top-0"
+          class="absolute z-999 top-0"
           ref={oldFlipperTopRef}
           value={oldValue()}
         />
         <FlipperBottom
-          class="absolute z-[998] bottom-0"
+          class="absolute z-998 bottom-0"
           ref={newFlipperBottomRef}
           value={currentValue()}
         />
@@ -81,7 +81,7 @@ export const Flipper = (props: FLipperProps) => {
         <FlipperBottom ref={oldFlipperBottomRef} value={oldValue()} />
       </div>
       <p
-        class="mt-[0.9375rem] md:mt-[1.75rem] text-[length:var(--flipper-label-size)] text-blue-100 text-center uppercase tracking-[0.44em]"
+        class="mt-3.75 md:mt-7 text-(length:--flipper-label-size) text-blue-100 text-center uppercase tracking-[0.44em]"
         aria-hidden="true"
       >
         {props.label}

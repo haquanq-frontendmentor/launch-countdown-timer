@@ -11,7 +11,7 @@ export const FlipperBottom = (props: FlipperBottomProps) => {
     <div
       ref={props.ref}
       class={cn(
-        "bg-blue-500 relative flex items-end justify-center text-[length:var(--flipper-number-size)] text-red-300 w-full h-1/2 overflow-hidden rounded-b-inherit",
+        "bg-blue-500 relative flex items-end justify-center text-(length:--flipper-number-size) text-red-300 w-full h-1/2 overflow-hidden rounded-b-inherit",
         props.class
       )}
       {...otherProps}

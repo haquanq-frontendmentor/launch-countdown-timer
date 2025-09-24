@@ -5,9 +5,9 @@ function App() {
   startCountdown();
 
   return (
-    <main class="bg-blue-800 pt-[8.875rem] pb-[3rem] lg:pt-[8.5rem] lg:pb-[4.5rem] min-h-screen relative">
+    <main class="bg-blue-800 pt-35.5 pb-12 lg:pt-34 lg:pb-18 min-h-screen relative">
       <img
-        class="absolute z-20 min-h-[10.5rem] max-h-[12.875rem] bottom-0 left-0 right-0 w-full pointer-events-none object-top object-cover"
+        class="absolute z-20 min-h-42 max-h-51.5 bottom-0 left-0 right-0 w-full pointer-events-none object-top object-cover"
         src="images/pattern-hills.svg"
         alt="Hills pattern"
       />
@@ -17,16 +17,16 @@ function App() {
         alt="Background stars pattern"
       />
       <div>
-        <h1 class="text-white px-6 text-[1.125rem] md:text-[1.375rem] md:mb-[6.5625rem] mb-14 tracking-[0.34em] leading-[calc(1em_+_0.3125rem)] uppercase text-center">
+        <h1 class="text-white px-6 text-[1.125rem] md:text-[1.375rem] md:mb-26.25 mb-14 tracking-[0.34em] leading-[calc(1em+0.3125rem)] uppercase text-center">
           We're launching soon
         </h1>
-        <div class="flex justify-center mb-[15.875rem] space-x-[calc(0.375em_+_0.5rem)]">
+        <div class="flex justify-center mb-63.5 space-x-[calc(0.375em+0.5rem)]">
           <Flipper value={store.day} label="days" />
           <Flipper value={store.hour} label="hours" />
           <Flipper value={store.minute} label="minutes" />
           <Flipper value={store.second} label="seconds" />
         </div>
-        <ul class="flex gap-8 z-[999] justify-center relative">
+        <ul class="flex gap-8 z-999 justify-center relative">
           <li>
             <a
               class="group w-6 h-6 flex justify-center items-center"

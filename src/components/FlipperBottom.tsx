@@ -7,6 +7,7 @@ interface FlipperBottomProps extends JSX.HTMLAttributes<HTMLDivElement> {
 
 export const FlipperBottom = (props: FlipperBottomProps) => {
   const [, otherProps] = splitProps(props, ["class", "ref"]);
+
   return (
     <div
       ref={props.ref}
@@ -19,9 +20,7 @@ export const FlipperBottom = (props: FlipperBottomProps) => {
       <FlipperCircle class="absolute -top-[calc(var(--flipper-circle-size)/2)] -left-[calc(var(--flipper-circle-size)/2)]" />
       <FlipperCircle class="absolute -top-[calc(var(--flipper-circle-size)/2)] -right-[calc(var(--flipper-circle-size)/2)]" />
 
-      <span class="w-full h-2/1 flex justify-center items-center">
-        {props.value}
-      </span>
+      <span class="w-full h-2/1 flex justify-center items-center">{props.value}</span>
     </div>
   );
 };

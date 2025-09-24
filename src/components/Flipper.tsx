@@ -49,14 +49,8 @@ export const Flipper = (props: FLipperProps) => {
     )
   );
 
-  const currentValue = () =>
-    props.value[0].toLocaleString(undefined, {
-      minimumIntegerDigits: 2,
-    });
-  const oldValue = () =>
-    props.value[1].toLocaleString(undefined, {
-      minimumIntegerDigits: 2,
-    });
+  const currentValue = () => props.value[0].toLocaleString(undefined, { minimumIntegerDigits: 2 });
+  const oldValue = () => props.value[1].toLocaleString(undefined, { minimumIntegerDigits: 2 });
 
   return (
     <div class="flipper relative" role="timer">
@@ -66,16 +60,8 @@ export const Flipper = (props: FLipperProps) => {
         ref={flipperRef}
         aria-hidden="true"
       >
-        <FlipperTop
-          class="absolute z-999 top-0"
-          ref={oldFlipperTopRef}
-          value={oldValue()}
-        />
-        <FlipperBottom
-          class="absolute z-998 bottom-0"
-          ref={newFlipperBottomRef}
-          value={currentValue()}
-        />
+        <FlipperTop class="absolute z-999 top-0" ref={oldFlipperTopRef} value={oldValue()} />
+        <FlipperBottom class="absolute z-998 bottom-0" ref={newFlipperBottomRef} value={currentValue()} />
 
         <FlipperTop ref={newFlipperTopRef} value={currentValue()} />
         <FlipperBottom ref={oldFlipperBottomRef} value={oldValue()} />

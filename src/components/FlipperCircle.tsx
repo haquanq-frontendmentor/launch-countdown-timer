@@ -6,10 +6,7 @@ export const FlipperCircle = (props: FlipperCircleProps) => {
   const [, others] = splitProps(props, ["class"]);
   return (
     <span
-      class={cn(
-        `absolute aspect-square w-(--flipper-circle-size) rounded-full bg-blue-800`,
-        props.class
-      )}
+      class={cn(`absolute aspect-square w-(--flipper-circle-size) rounded-full bg-blue-800`, props.class)}
       {...others}
     ></span>
   );

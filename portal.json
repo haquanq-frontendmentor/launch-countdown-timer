@@ -1,0 +1,15 @@
+{
+  "name": "Lauch Countdown Timer",
+  "featured": false,
+  "colors:": {
+    "brand": "#1E1E28"
+  },
+  "images": {
+    "preview": "https://raw.githubusercontent.com/haquanq-frontendmentor/launch-countdown-timer/main/docs/preview.jpg"
+  },
+  "frontendmentor": {
+    "difficulty": "intermediate",
+    "challengeUrl": "https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-",
+    "solutionUrl": "https://www.frontendmentor.io/solutions/animated-number-flipper-with-css-custom-properties-azN_wVvCQd"
+  }
+}
